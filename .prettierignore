@@ -1,0 +1,8 @@
+package-lock.json
+*.pug
+*.png
+./public/img
+./views
+Makefile
+dist
+aws/fargate/resources/*.json
