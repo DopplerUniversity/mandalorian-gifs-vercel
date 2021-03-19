@@ -4,7 +4,7 @@
 
 This repository is for demonstrating [Vercel's official Doppler integration](https://vercel.com/integrations/doppler). Also check out [Doppler's Vercel integration docs](https://docs.doppler.com/docs/vercel).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FDopplerHQ%2Fmandalorion-gifs-vercel&env=GIPHY_TAG,GIPHY_RATING&envDescription=GIPHY_TAG%20should%20be%20%22mandalorion%22%2C%20GIPHY_TAG%20should%20be%20%22pg13%22%2C%20and%20if%20you've%20created%20a%20GIPHY%20API%20key%2C%20manually%20add%20a%20GIPHY_API_KEY%20environment%20variable&envLink=https%3A%2F%2Fgithub.com%2FDopplerHQ%2Fmandalorion-gifs-vercel%2Fblob%2Fmain%2Fsample.env&project-name=doppler-mandalorion-gifs&repo-name=mandalorion-gifs-vercel&redirect-url=https%3A%2F%2Fdashboard.doppler.com%2F)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FDopplerHQ%2Fmandalorion-gifs-vercel&env=GIPHY_TAG,GIPHY_RATING&envDescription=GIPHY_TAG%20should%20be%20%22mandalorion%22%2C%20GIPHY_TAG%20should%20be%20%22pg13%22%2C%20and%20if%20you've%20created%20a%20GIPHY%20API%20key%2C%20manually%20add%20a%20GIPHY_API_KEY%20environment%20variable&envLink=https%3A%2F%2Fgithub.com%2FDopplerHQ%2Fmandalorion-gifs-vercel%2Fblob%2Fmain%2Fsample.env&project-name=doppler-mandalorion-gifs&repo-name=mandalorion-gifs-vercel&redirect-url=https%3A%2F%2Fdashboard.doppler.com%2F&developer-id=oac_PwsovDZUAMuUygRu6bp4AMme&integration-ids=oac_UdMtwPpcN7yXVQsZFvMSQFy5)
 
 ## What is Doppler?
 
