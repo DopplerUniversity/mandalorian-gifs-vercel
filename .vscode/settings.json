@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "javascript.validate.enable": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "docker.explorerRefreshInterval": 3000,
+  "terminal.integrated.env.osx": {
+    "PATH": "$(pwd)/node_modules/.bin"
+  }
+}
