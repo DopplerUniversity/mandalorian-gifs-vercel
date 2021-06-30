@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "next dev",
     "vercel-dev": "vercel dev",
+    "vercel-create-env-vars": "./bin/vercel-create-env-vars.sh",
+    "vercel-delete-env-vars": "./bin/vercel-delete-env-vars.sh",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --fix ./",

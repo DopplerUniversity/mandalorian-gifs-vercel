@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Script from 'next/script'
 import { Config } from '../lib/config'
 import { getRandomGIF } from '../lib/giphy'
 
@@ -15,9 +14,9 @@ export default function Index({ gif, config }) {
         <title>{title}</title>
         <meta name="theme-color" content="#7952b3" />
         <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
           rel="stylesheet"
-          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
           crossOrigin="anonymous"
         />
         <meta property="og:image" content={`${Config.APP_URL}/images/og-image.jpg`} />
@@ -162,11 +161,6 @@ export default function Index({ gif, config }) {
           </p>
         </div>
       </footer>
-      <Script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-        crossOrigin="anonymous"
-      ></Script>
     </div>
   )
 }

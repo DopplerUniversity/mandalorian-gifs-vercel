@@ -23,13 +23,12 @@ doppler secrets set --silent --config stg WEBHOOK_SECRET "$(random_id)"
 doppler secrets set --silent --config prd WEBHOOK_SECRET "$(random_id)"
 
 echo '[info]: Adjusting values for production environment'
-doppler secrets delete NODE_DEV --config prd -y
+doppler secrets set --silent --config prd NODE_ENV production
+doppler secrets set --silent --config prd LOGGING common
 
 echo '[info]: Setting GIPHY API KEY (if supplied)'
-echo -n 'GIPHY API KEY: ' && read -rs GIPHY_API_KEY
-doppler secrets set --silent GIPHY_API_KEY="$GIPHY_API_KEY"
-doppler secrets set --silent --config stg GIPHY_API_KEY="$GIPHY_API_KEY"
-doppler secrets set --silent --config prd GIPHY_API_KEY="$GIPHY_API_KEY"
+doppler secrets set --silent GIPHY_API_KEY="$1"
+doppler secrets set --silent --config prd GIPHY_API_KEY="$1"
 
 echo '[info]: Setting default local Doppler config to "dev"'
 doppler setup --no-prompt --silent
