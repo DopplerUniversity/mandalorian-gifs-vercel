@@ -4,6 +4,8 @@
 
 This repository is for demonstrating [Vercel's official Doppler integration](https://vercel.com/integrations/doppler). Also check out [Doppler's Vercel integration docs](https://docs.doppler.com/docs/vercel).
 
+<a href="https://dashboard.doppler.com/workplace/template/import?template=https%3A%2F%2Fgithub.com%2FDopplerUniversity%2Fmandalorion-gifs-vercel%2Fblob%2Fmain%2Fdoppler-template.yaml"/><img src="https://raw.githubusercontent.com/DopplerHQ/app-config-templates/main/import-to-doppler.png" width="166" height="32" alt="Import to Doppler" /></a>
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FDopplerHQ%2Fmandalorion-gifs-vercel&env=GIPHY_TAG,GIPHY_RATING&envDescription=Click%20Learn%20More%20to%20view%20default%20environment%20variable%20values&envLink=https%3A%2F%2Fgithub.com%2FDopplerHQ%2Fmandalorion-gifs-vercel%2Fblob%2Fmain%2Fsample.env&project-name=doppler-mandalorion-gifs&repo-name=mandalorion-gifs-vercel&redirect-url=https%3A%2F%2Fdashboard.doppler.com%2F&developer-id=oac_PwsovDZUAMuUygRu6bp4AMme&integration-ids=oac_UdMtwPpcN7yXVQsZFvMSQFy5)
 
 ## What is Doppler?
