@@ -4,9 +4,9 @@
 
 This repository is for demonstrating [Vercel's official Doppler integration](https://vercel.com/integrations/doppler). Also check out [Doppler's Vercel integration docs](https://docs.doppler.com/docs/vercel).
 
-<a href="https://dashboard.doppler.com/workplace/template/import?template=https%3A%2F%2Fgithub.com%2FDopplerUniversity%2Fmandalorion-gifs-vercel%2Fblob%2Fmain%2Fdoppler-template.yaml"/><img src="https://raw.githubusercontent.com/DopplerHQ/app-config-templates/main/doppler-button.svg" alt="Import to Doppler" /></a>
+<a href="https://dashboard.doppler.com/workplace/template/import?template=https%3A%2F%2Fgithub.com%2FDopplerUniversity%2Fmandalorion-gifs-vercel%2Fblob%2Fmain%2Fdoppler-template.yaml"/><img src="https://raw.githubusercontent.com/DopplerUniversity/app-config-templates/main/doppler-button.svg" alt="Import to Doppler" /></a>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FDopplerHQ%2Fmandalorion-gifs-vercel&env=GIPHY_TAG,GIPHY_RATING&envDescription=Click%20Learn%20More%20to%20view%20default%20environment%20variable%20values&envLink=https%3A%2F%2Fgithub.com%2FDopplerHQ%2Fmandalorion-gifs-vercel%2Fblob%2Fmain%2Fsample.env&project-name=doppler-mandalorion-gifs&repo-name=mandalorion-gifs-vercel&redirect-url=https%3A%2F%2Fdashboard.doppler.com%2F&developer-id=oac_PwsovDZUAMuUygRu6bp4AMme&integration-ids=oac_UdMtwPpcN7yXVQsZFvMSQFy5)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FDopplerUniversity%2Fmandalorion-gifs-vercel&env=GIPHY_TAG,GIPHY_RATING&envDescription=Click%20Learn%20More%20to%20view%20default%20environment%20variable%20values&envLink=https%3A%2F%2Fgithub.com%2FDopplerUniversity%2Fmandalorion-gifs-vercel%2Fblob%2Fmain%2Fsample.env&project-name=doppler-mandalorion-gifs&repo-name=mandalorion-gifs-vercel&redirect-url=https%3A%2F%2Fdashboard.doppler.com%2F&developer-id=oac_PwsovDZUAMuUygRu6bp4AMme&integration-ids=oac_UdMtwPpcN7yXVQsZFvMSQFy5)
 
 ## What is Doppler?
 
@@ -34,9 +34,9 @@ We recommend deploying this repository to Vercel to learn about Doppler's offici
 
 > NOTE: This guide presumes you already have Node, Make, and Git installed
 
-1. Clone the [Mandalorion GIFs Vercel repo](https://github.com/DopplerHQ/mandalorion-gifs-vercel):
+1. Clone the [Mandalorion GIFs Vercel repo](https://github.com/DopplerUniversity/mandalorion-gifs-vercel):
 ```sh
-git clone https://github.com/DopplerHQ/mandalorion-gifs-vercel
+git clone https://github.com/DopplerUniversity/mandalorion-gifs-vercel
 ```
 
 2. Install the required Node dependencies:
@@ -64,7 +64,7 @@ make create-doppler-project GIPHY_API_KEY=YOUR_KEY_HERE
 make create-doppler-project
 ```
 
-6. [Create a new Vercel application](https://vercel.com/new), selecting the **DopplerHQ/mandalorion-gifs-vercel** repository.
+6. [Create a new Vercel application](https://vercel.com/new), selecting the **DopplerUniversity/mandalorion-gifs-vercel** repository.
 
 7. Open the Doppler dashboard (`doppler open`), navigate to the **dev** environment for the **mandalorion-gifs** project, then enable the **Vercel** integration, syncing the Doppler **dev** environment with Vercel's **development** environment.
 

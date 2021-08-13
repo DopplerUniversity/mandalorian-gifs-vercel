@@ -150,7 +150,7 @@ export default function Index({ gif, config }) {
           </p>
           <p className="mt-0 pb-5">
             <a
-              href="https://github.com/DopplerHQ/mandalorion-gifs"
+              href="https://github.com/DopplerUniversity/mandalorion-gifs-vercel"
               className="small text-white nav-link"
               target="_blank"
               rel="noreferrer"
