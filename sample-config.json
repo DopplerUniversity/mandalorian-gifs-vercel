@@ -1,7 +1,29 @@
 {
-  "GIPHY_API_KEY": "",
-  "GIPHY_RATING": "pg13",
-  "GIPHY_TAG": "mandalorion",
-  "DEBUG": "app: error:",
-  "DEBUG_CONFIG": "yes"
+  "development": {
+    "DEBUG_COLORS": "yes",
+    "LOGGING": "dev",
+    "DEBUG": "app: server: error:",
+    "DEBUG_CONFIG": "yes",
+    "GIPHY_API_KEY": null,
+    "GIPHY_RATING": "g",
+    "GIPHY_TAG": "mandalorian"
+  },
+  "preview": {
+    "DEBUG_COLORS": "no",
+    "LOGGING": "common",
+    "DEBUG": "app: error:",
+    "DEBUG_CONFIG": "no",
+    "GIPHY_API_KEY": null,
+    "GIPHY_RATING": "g",
+    "GIPHY_TAG": "mandalorian"
+  },
+  "production": {
+    "DEBUG_COLORS": "no",
+    "LOGGING": "common",
+    "DEBUG": "app: error:",
+    "DEBUG_CONFIG": "no",
+    "GIPHY_API_KEY": null,
+    "GIPHY_RATING": "g",
+    "GIPHY_TAG": "mandalorian"
+  }
 }

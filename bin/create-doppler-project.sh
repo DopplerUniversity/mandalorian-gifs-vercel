@@ -4,35 +4,19 @@ set -e
 
 ./bin/doppler-check.sh
 
-random_id() {
-  docker run --rm alpine/openssl rand -base64 32
-}
+echo -e '\n[info]: Creating "mandalorian-gifs-vercel" project'
+doppler import
+doppler setup --no-interactive --silent
 
-echo '[info]: Creating "mandalorion-gifs" project'
-doppler projects create mandalorion-gifs --silent
-doppler setup --no-prompt --silent
+echo -e '\n[info]: Setting random Webhook secrets'
+doppler secrets set --silent --config dev WEBHOOK_SECRET "$(openssl rand -base64 32)"
+doppler secrets set --silent --config prev WEBHOOK_SECRET "$(openssl rand -base64 32)"
+doppler secrets set --silent --config prd WEBHOOK_SECRET "$(openssl rand -base64 32)"
 
-echo '[info]: Setting initial configuration using sample.env'
-doppler secrets upload --silent --config dev sample.env
-doppler secrets upload --silent --config stg sample.env
-doppler secrets upload --silent --config prd sample.env
+echo -e '\n[info]: Tweaking staging and production values'
+doppler secrets delete DEBUG_COLORS --config prev -y --silent
+doppler secrets delete DEBUG_COLORS --config prd -y --silent
 
-echo '[info]: Setting random Webhook secrets'
-doppler secrets set --silent --config dev WEBHOOK_SECRET "$(random_id)"
-doppler secrets set --silent --config stg WEBHOOK_SECRET "$(random_id)"
-doppler secrets set --silent --config prd WEBHOOK_SECRET "$(random_id)"
-
-echo '[info]: Adjusting values for production environment'
-doppler secrets delete NODE_DEV --config prd -y
-
-echo '[info]: Setting GIPHY API KEY (if supplied)'
-echo -n 'GIPHY API KEY: ' && read -rs GIPHY_API_KEY
-doppler secrets set --silent GIPHY_API_KEY="$GIPHY_API_KEY"
-doppler secrets set --silent --config stg GIPHY_API_KEY="$GIPHY_API_KEY"
-doppler secrets set --silent --config prd GIPHY_API_KEY="$GIPHY_API_KEY"
-
-echo '[info]: Setting default local Doppler config to "dev"'
-doppler setup --no-prompt --silent
-
-echo '[info]: Opening the Doppler dashboard'
+echo -e '\n[info]: Opening the Doppler dashboard'
+sleep 1
 doppler open dashboard

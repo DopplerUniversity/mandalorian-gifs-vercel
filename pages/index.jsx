@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Config } from '../lib/config'
 import { getRandomGIF } from '../lib/giphy'
 
-const title = 'Mandalorion GIFs'
+const title = 'Mandalorian GIFs'
 export default function Index({ gif, config }) {
   return (
     <div className="page-container text-center text-white bg-dark">
@@ -35,7 +35,7 @@ export default function Index({ gif, config }) {
                 <img src="/images/doppler-logo.png" className="doppler-logo mw-100" alt="" />
               </a>
               <img
-                src="/images/mandalorion-logo.png"
+                src="/images/mandalorian-logo.png"
                 className="d-block mx-auto mt-4 logo img img-fluid mw-100"
                 alt=""
               />
@@ -150,7 +150,7 @@ export default function Index({ gif, config }) {
           </p>
           <p className="mt-0 pb-5">
             <a
-              href="https://github.com/DopplerUniversity/mandalorion-gifs-vercel"
+              href="https://github.com/DopplerUniversity/mandalorian-gifs-vercel"
               className="small text-white nav-link"
               target="_blank"
               rel="noreferrer"

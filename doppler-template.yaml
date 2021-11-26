@@ -1,6 +1,6 @@
 projects:
-  - name: 'mandalorion-gifs'
-    description: 'Mandalorion GIFS generator'
+  - name: 'mandalorian-gifs-vercel'
+    description: 'Mandalorian GIFS generator'
     environments:
       - slug: 'dev'
         name: 'Development'
@@ -16,33 +16,27 @@ projects:
           - slug: 'prd'
     secrets:
       dev:
-        NODE_ENV: 'development'
         DEBUG_COLORS: 'yes'
         DEBUG: 'app: server: error:'
         LOGGING: 'dev'
-        HOST: 'localhost'
-        PORT: '8080'
         GIPHY_API_KEY: ''
-        GIPHY_TAG: 'mandalorion'
+        GIPHY_TAG: 'mandalorian'
         GIPHY_RATING: 'pg13'
+        WEBHOOK_SECRET: ''
       prev:
-        NODE_ENV: 'development'
         DEBUG: 'app: server: error:'
         LOGGING: 'dev'
-        HOST: '0.0.0.0'
-        PORT: '8080'
         GIPHY_API_KEY: ''
-        GIPHY_TAG: 'mandalorion'
+        GIPHY_TAG: 'mandalorian'
         GIPHY_RATING: 'pg13'
+        WEBHOOK_SECRET: ''
       prd:
-        NODE_ENV: 'production'
         DEBUG: 'app: server: error:'
         LOGGING: 'common'
-        HOST: '0.0.0.0'
-        PORT: '8080'
         GIPHY_API_KEY: ''
-        GIPHY_TAG: 'mandalorion'
+        GIPHY_TAG: 'mandalorian'
         GIPHY_RATING: 'pg13'
+        WEBHOOK_SECRET: ''
 
     # Vercel is the only integration currently supported
     integrations:
