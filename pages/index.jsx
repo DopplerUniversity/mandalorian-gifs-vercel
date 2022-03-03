@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Config } from '../lib/config'
+import Config from '../lib/config'
 import { getRandomGIF } from '../lib/giphy'
 
 const title = 'Mandalorian GIFs'
@@ -19,9 +19,9 @@ export default function Index({ gif, config }) {
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
           crossOrigin="anonymous"
         />
-        <meta property="og:image" content={`${Config.APP_URL}/images/og-image.jpg`} />
+        <meta property="og:image" content={`${config.APP_URL}/images/og-image.jpg`} />
         <meta name="og:title" content={title} />
-        <meta name="twitter:card" content={`${Config.APP_URL}/images/og-image.jpg`} />
+        <meta name="twitter:card" content={`${config.APP_URL}/images/og-image.jpg`} />
 
         <link rel="shortcut icon" href="/images/doppler-fav-icon-logo.png" />
         <link rel="icon" type="image/png" href="/images/doppler-fav-icon-logo.png" />
@@ -166,17 +166,18 @@ export default function Index({ gif, config }) {
 }
 
 export async function getServerSideProps() {
+  const config = Config.load()
   const gif = await getRandomGIF()
   return {
     props: {
       gif: gif.toJSON(),
       config: {
-        DOPPLER_PROJECT: Config.DOPPLER_PROJECT || null,
-        DOPPLER_CONFIG: Config.DOPPLER_CONFIG || null,
-        GIPHY_API_KEY_SET: Boolean(Config.GIPHY_API_KEY),
-        GIPHY_TAG: Config.GIPHY_TAG,
-        GIPHY_RATING: Config.GIPHY_RATING,
-        DEBUG_CONFIG: Config.DEBUG_CONFIG,
+        DOPPLER_PROJECT: config.DOPPLER_PROJECT || null,
+        DOPPLER_CONFIG: config.DOPPLER_CONFIG || null,
+        GIPHY_API_KEY_SET: Boolean(config.GIPHY_API_KEY),
+        GIPHY_TAG: config.GIPHY_TAG,
+        GIPHY_RATING: config.GIPHY_RATING,
+        DEBUG_CONFIG: config.DEBUG_CONFIG,
       },
     },
   }

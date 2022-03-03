@@ -62,7 +62,7 @@ doppler login
 5. Create the Doppler project which sets secrets for all environments:
 
 ```sh
-./bin/create-doppler-project.sh
+doppler import
 ```
 
 6. [Create a new Vercel application](https://vercel.com/new), selecting the **DopplerUniversity/mandalorian-gifs-vercel** repository.

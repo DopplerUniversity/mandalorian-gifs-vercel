@@ -75,3 +75,4 @@ typings/
 
 .vercel
 .DS_Store
+secrets.enc.js

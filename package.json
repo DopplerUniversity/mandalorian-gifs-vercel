@@ -4,12 +4,12 @@
     "url": "github:DopplerUniversity/mandalorian-gifs-vercel"
   },
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "vercel-dev": "vercel dev",
-    "vercel-create-env-vars": "./bin/vercel-create-env-vars.sh",
-    "vercel-delete-env-vars": "./bin/vercel-delete-env-vars.sh",
-    "build": "next build",
+    "encrypt-secrets": "node bin/encrypt-secrets.js",
+    "build": "npm run encrypt-secrets && next build",
     "start": "next start",
     "lint": "eslint --fix ./",
     "next-lint": "next lint --fix ./",
@@ -21,7 +21,9 @@
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "debug": "^4.3.1",
-    "next": "^11.0.1",
+    "gitops-secrets": "git+https://github.com/DopplerUniversity/gitops-secrets-nodejs.git",
+    "next": "^12.1.0",
+    "random-words": "^1.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "swr": "^0.5.6"
@@ -32,6 +34,6 @@
     "eslint-config-next": "^11.0.1",
     "eslint-plugin-import": "^2.23.4",
     "prettier": "^2.3.1",
-    "vercel": "^23.0.1"
+    "vercel": "^24.0.0"
   }
 }
